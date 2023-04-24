@@ -1,0 +1,7 @@
+{
+    "emmet.showSuggestionsAsSnippets": true,
+    "reactSnippets.settings.importReactOnTop": false,
+    "emmet.includeLanguages": {
+        "html": "htmlreact"
+    }
+}

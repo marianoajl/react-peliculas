@@ -1,0 +1,39 @@
+.MoviesCard {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    background: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.MoviesCard:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    outline: 3px solid var(--tertiary-color);
+    transition: 0.35s;
+
+}
+
+.MoviesCard>img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+    border-radius: 8px;
+}
+
+.MoviesCard>h6 {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-white);
+}
+
+
+
+/* Over to 768px */
+@media screen and (min-width: 768px) {
+
+    .MoviesCard {
+        padding: 1.2rem 1.2rem 1rem 1.2rem;
+    }
+}

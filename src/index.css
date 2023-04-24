@@ -1,13 +1,51 @@
-body {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Width & Height */
+  --max-width-app:            1400px;
+
+  --header-height:          50px;
+
+  /* Colors */
+  --primary-color:         #0d253f;
+  --secondary-color:       #01b4e4;
+  --tertiary-color:        #90cea1;
+
+  --text-white:            #fffff7;     
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--secondary-color);
+}
+
+/* ------ MOBILE FIRST --------- */
+/* rem */
+html {
+  font-size: 14px;
+}
+
+/* Over to 768px */
+@media screen and (min-width: 768px) {
+
+  :root {
+    /* Width & Height */
+    --header-height: 77px;
+  }
+
+  /* rem */
+  html {
+    font-size: 16px;
+  }
 }
