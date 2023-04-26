@@ -1,14 +1,13 @@
 .App {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: var(--header-height) 1fr;
-  grid-template-areas: "header" "main";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-header {
   grid-area: header;
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
@@ -17,6 +16,7 @@
   min-height: var(--header-height);
   padding: 0 5%;
   background-color: var(--primary-color);
+  z-index: 10; /* Se muestra por delante de todo */
 }
 
 .App-header>a {
@@ -36,14 +36,14 @@
   transition: 0.35s;
 }
 
-main {
+/* main {
   grid-area: main;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* place-self: stretch center; */
-}
+  /* place-self: stretch center; 
+} */
 
 /* -- Responsive -- */
 

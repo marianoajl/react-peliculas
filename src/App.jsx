@@ -1,5 +1,5 @@
-import { MoviesGrid } from "./components/MoviesGrid";
-import { BrowserRouter,Routes,Route,Link } from "react-router-dom"; 
+import { Movies } from "./components/Movies";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; 
 import "./App.css";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
                 </header>
                 <Routes>
                     {/* componente de películas */}
-                    <Route path="/" element={<MoviesGrid />}/>
-                    <Route path="/movie" element="otra vista"/>
+                    <Route path="/" element={<Movies/>}/>
+                    <Route path="/movie/:movieid" element="otra vista"/>
                 </Routes>
             </div>
         </BrowserRouter >
