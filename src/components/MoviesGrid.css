@@ -4,7 +4,7 @@
     max-width: var(--max-width-app);
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 210px));
     grid-gap: 1rem;
     padding: 1rem 5%;
 }

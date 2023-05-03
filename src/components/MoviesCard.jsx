@@ -7,7 +7,7 @@ export const MoviesCard = ({ choclo }) => {
 
     return (
         <li id={choclo.id} className='MoviesCard'>
-            <Link className="MovieCardLink" to="/"></Link>
+            <Link className="MovieCardLink" to={`/movie/${choclo.id}`}></Link>
             <img src={imgURL} alt={`${choclo.title} img`} />
             <h6>{choclo.title}</h6>
         </li>

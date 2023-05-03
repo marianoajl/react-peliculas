@@ -1,4 +1,5 @@
-import { Movies } from "./components/Movies";
+import { Movies } from "./pages/Movies";
+import { MovieDetail } from "./pages/MovieDetail";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; 
 import "./App.css";
 
@@ -14,7 +15,7 @@ function App() {
                 <Routes>
                     {/* componente de películas */}
                     <Route path="/" element={<Movies/>}/>
-                    <Route path="/movie/:movieid" element="otra vista"/>
+                    <Route path="/movie/:movieId" element={<MovieDetail/>}/>
                 </Routes>
             </div>
         </BrowserRouter >

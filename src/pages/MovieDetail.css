@@ -1,0 +1,36 @@
+.contenedorDetalle {
+    max-width: var(--max-width-app);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: 350px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.peliculaDetalle {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.item {
+    margin-top: 0;
+}
+
+/* -- Responsive -- */
+
+/*  Over to 768px */
+@media screen and (min-width: 768px) {
+
+    .contenedorDetalle {
+        /* flex-direction: row; */
+        justify-content: flex-start;
+        align-items: center;
+        /* flex-wrap: no-wrap; */
+    }
+}

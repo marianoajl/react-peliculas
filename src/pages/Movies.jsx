@@ -1,4 +1,4 @@
-import { MoviesGrid } from "./MoviesGrid";
+import { MoviesGrid } from "../components/MoviesGrid";
 
 export const Movies = () => {
     return (
