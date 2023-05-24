@@ -30,6 +30,30 @@ body {
   background: var(--secondary-color);
 }
 
+
+/* Cambiar el color de fondo y la anchura del scrollbar */
+::-webkit-scrollbar {
+  background-color:var(--secondary-color);;
+  width: 10px;
+}
+
+/* Redondear las esquinas del scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+}
+
+/* Cambiar el color del "pulgar" o "manija" del scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Cambiar el color del "pulgar" cuando el usuario hace clic y lo arrastra
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--tertiary-color);
+} */
+
 /* ------ MOBILE FIRST --------- */
 /* rem */
 html {
